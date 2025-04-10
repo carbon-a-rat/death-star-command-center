@@ -5,19 +5,8 @@
 go run main.go serve
 ```
 
-You also need to import in the settings the current state of the database. To do this, 
-create a copy of `pb_data_testing` and rename it to `pb_data`. 
 
-The account key is:
+## Import/Export of the database 
 
-```yaml
-- username: supercyp971@gmail.com
-- password: vc*$8X3AHz6kfRdNvM
-```
-
-> :!!!!!:
-
-DO NOT USE THIS IN PRODUCTION, IT IS ONLY MEANT TO BE USED IN DEVELOPMENT TO BE TESTED LOCALLY.
-
-
+To import/export the database, we do this through the migrations inside pocketbase. For more info, read the migrations doc [here](https://pocketbase.io/docs/go-migrations/).
 
