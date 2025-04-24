@@ -2,7 +2,7 @@
 
 
 ```bash
-go run main.go serve
+go run . serve
 ```
 
 

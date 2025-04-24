@@ -26,6 +26,10 @@ func main() {
 		return se.Next()
 	})
 
+	// Register the heartbeat job, for detecting offline launchers and users
+	app.Logger().Info("Registering heartbeat job...")
+	RegisterLauncherHeartbeatJob(app)
+
 	if err := app.Start(); err != nil {
 		log.Fatal(err)
 	}
